@@ -20,9 +20,9 @@ html {
 
   /* Fonts */
   --font-size-h1: clamp(2.4rem, 1.8366rem + 1.5023vw, 4rem);
-  --font-size-time-window: 1.8rem;
-  --font-size-activity-result: clamp(3.2rem, 2.3549rem + 2.2535vw, 5.6rem);
-  --font-size-activity-window: 1.5rem;
+  --font-size-option: 1.8rem;
+  --font-size-currenttime: clamp(3.2rem, 2.3549rem + 2.2535vw, 5.6rem);
+  --font-size-previoustime: 1.5rem;
 
   /* Border Radius */
 
@@ -166,7 +166,7 @@ body{
 
 .option{
     width:max-content;
-    font-size: var(--font-size-time-window) ;
+    font-size: var(--font-size-option) ;
     color:var(--blue-200) ;
     transition: color 250ms;
     cursor: pointer;
@@ -286,7 +286,7 @@ body{
 }
 
 .current_timeframe{
-    font-size: var(--font-size-activity-result);
+    font-size: var(--font-size-currenttime);
     font-weight: 300;
     color: white;
     line-height: 6.6rem;
@@ -294,6 +294,6 @@ body{
 
 .previous_timeframe{
     display: flex;
-    font-size: var(--font-size-activity-window);
+    font-size: var(--font-size-previoustime);
     color: var(--blue-100);
 }
